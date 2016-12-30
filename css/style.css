@@ -1,0 +1,545 @@
+html
+{
+	height: 100%;
+}
+
+/*Das Gesamte soll zentriert sein*/
+#wrapper
+{
+	width: 100%;
+	height: 100%;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: #111;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #222;
+}
+/*Schrifteinstellungen, Hintergrund*/
+body
+{
+	background: #111;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.6vh;
+	color: #bbbbbb;
+	height: 100%;
+    padding: 2%;
+}
+
+/*Links stylen*/
+a
+{
+	text-decoration: none;
+	color: #ddbb99;
+}
+a:hover
+{
+	text-decoration: none;
+}
+
+
+.divider{
+    color:#bbb;
+    width:40%;
+    margin:2% auto;
+    overflow:hidden;
+    text-align:center;   
+    line-height:1.2em;
+}
+
+.divider:before, .divider:after{
+    content:"";
+    vertical-align:top;
+    display:inline-block;
+    width:50%;
+    height:0.65em;
+    border-bottom:1px solid #555;
+    margin:0 2% 10% -55%;
+}
+.divider:after{
+    margin:0 -55% 0 2%;
+}
+
+.time
+{
+	margin-bottom: -2%;
+	font-size: 3em;
+}
+/*Because otherwise WON'T WORK*/
+#noShadow
+{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+.fullBG
+{
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+	padding: 0;
+}
+
+.dark
+{
+  background:#090909 !important;
+}
+
+.innerPad
+{
+  padding: 2.5% 2.5% 0 7% !important;
+}
+
+.outerPad
+{
+  padding-top: 2%;
+}
+
+.sidePad
+{
+  padding: 0 2.5%;
+}
+
+.box
+{
+  margin: 0 !important;
+  background: #111;
+  width: 100% !important;
+}
+
+#contactLink
+{
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+	text-align: center;
+	padding: 2%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#contactLink.symbol:hover
+{
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    background-color: #222;
+}
+
+#contactLink img
+{
+	width: 70px;
+	height: auto;
+}
+
+.description
+{
+	margin-top: -1%;
+}
+
+.imgOverlay
+{
+	opacity: .8;
+	width: 80%;
+	padding: 2%;
+	margin: 30% 0 10% 10%;
+}
+
+.imgOverlay.WithBG
+{
+	background: #111;
+}
+
+#dia
+{
+	margin: 0;
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+.container-fluid.media
+{
+	padding: 0;
+}
+
+/*BS Stuff*/
+.container-fluid.media img:first-child
+{
+	width: 100%;
+	height: auto;
+    box-shadow:  0 4px 15px 2px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow:  0 4px 15px 2px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow:  0 4px 15px 2px rgba(0, 0, 0, 0.7);
+    -ms-box-shadow:  0 4px 15px 2px rgba(0, 0, 0, 0.7);
+    -o-box-shadow:  0 4px 15px 2px rgba(0, 0, 0, 0.7);
+	
+}
+.container-fluid .row
+{
+	width: 95%;
+	margin-left: 2.5%;
+	margin-bottom: 1.5%;
+}
+
+
+/*Überschriften stylen*/
+h1
+{
+	text-align: center;
+	font-size: 4em;
+	margin-bottom: 3%;
+ 	font-weight: 200;
+}
+h2
+{
+	text-align: center;
+	font-size: 2.5em;
+	margin-bottom: 3%;
+ 	font-weight: 200;
+	color: #9aa000;
+}
+
+h3
+{
+	text-align: center;
+	font-size: 2.2em;
+	margin-bottom: 3%;
+ 	font-weight: 200;
+}
+p
+{
+	font-size: 1.2em;
+}
+
+.fullVid
+{
+	display: block;
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	background-position: center center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
+.full
+{
+	display: block;
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
+
+.full.profile
+{
+	background-image: url('../img/profile.png');
+}
+
+.overlay
+{
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+	background: #090909;
+	padding: 2%;
+	opacity: 0;
+	position: fixed;
+	top: 45%;
+}
+.overlay:hover
+{
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+	opacity: .7;
+}
+
+/*Der Impressum-Schriftzug ist kein Link, sondern aktiviert eine JavaScript-Funktion, dem Nutzer soll aber klar sein, dass er ihn anklicken kann*/
+#impressum
+{
+	cursor: pointer;
+	color: #ddbb99;
+}
+
+/*Abstand für Videos*/
+.video
+{
+	margin: 1.5%;
+}
+
+/*Youtube-Videos sollen noch andere Elemente (Text) auf derselben Zeile zulassen (siehe Banana3D-Projektseite)*/
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+iframe
+{
+	float: left;
+	padding: 8px 8px;
+	background: #090909;
+	width: 100%;
+	height: auto;
+	-moz-box-shadow:3px 3px 3px black;
+	-webkit-box-shadow:3px 3px 3px black;
+	box-shadow:3px 3px 3px black;
+}
+
+.greeting
+{
+	font-size: 3.5em;
+	text-align: center;
+	margin-top: 20%;
+	margin-bottom: 30%;
+	color: #a0d000;
+	width: 70%;
+	background: rgba(11,11,11,0.65);
+	border-radius: 10px;
+	margin-left: 15%;
+	padding: 3% 0;
+}
+
+.profileList
+{
+	line-height: 2.5;
+	font-size: 1.4em;
+	margin-top: 5%;
+}
+
+.profileList li
+{	
+	width: 80%;
+	margin-left: 10%;
+	list-style-type: circle;
+}
+.profileList li li
+{	
+	list-style-type: disc;
+}
+
+.profileList a
+{
+	color: #aa9;
+}
+
+.profileList a:hover
+{
+	color: #bbc;
+}
+
+.container-fluid.home
+{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	padding: 0 !important;
+	width: 85%;
+}
+
+.doSomethingBlock
+{
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+	text-align: center;
+	padding: 9% 5%;
+	height: 100%;
+	color: #999;
+	white-space: nowrap;
+	background: rgba(17,17,17,1);
+	margin: 0;
+	border: none;
+}
+
+.doSomethingBlock.ul
+{
+	border: 1px solid #888;
+}
+.doSomethingBlock.ur
+{
+	border-top: 1px solid #888;
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+}
+.doSomethingBlock.ll
+{
+	border-left: 1px solid #888;
+	border-bottom: 1px solid #888;
+}
+.doSomethingBlock.lm
+{
+	border-left: 1px solid #888;
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+}
+.doSomethingBlock.lr
+{
+	border-bottom: 1px solid #888;
+	border-right: 1px solid #888;
+}
+
+.col-lg-4.doSomethingBlock
+{
+	font-size: 2.2em;
+}
+.col-lg-6.doSomethingBlock
+{
+	font-size: 2.2em;
+}
+.doSomethingBlock:hover
+{
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+	background: rgba(11,11,11,0.2);
+	color: #fff;
+}
+
+.welcomeText
+{
+	margin: 4% 0 0% 0;
+}
+
+#right
+{
+	float: right;
+}
+
+.frame {
+ 	overflow: hidden;
+  position: relative;
+  float: left;
+  width: 85%;
+  height: auto;
+  margin-left: 7.5%;
+}
+
+.frame a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.frame img {
+	height: 100%;
+	width: 100%;
+  z-index: 0;
+}
+
+.frame a .caption {
+	background-color: #080808;
+	opacity: .75;
+	display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 90%;
+	transition-property: top;
+  transition-duration: 0.5s;  
+  width: 75%;  
+  z-index: 10;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+.frame a:hover .caption {
+	top: 60%;
+	opacity: .9;
+  border-top: 2px solid #ccf;
+  border-left: 2px solid #ccf;
+  border-right: 2px solid #ccf;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+.frame a .caption h2 {
+	text-align: left;
+  font-size: 2em;
+	margin-bottom: 6%;
+	margin-left: 3%;
+	margin-top: 2.5%;
+  color: #bbb;
+ font-weight:normal;
+}
+.frame a .caption .projectType
+{
+	font-size:0.75em;
+    color:cyan;
+	margin-right: 10%;
+	float: right;
+}
+
+.frame a .caption p {
+  color: white;
+  line-height: 150%;
+  font-size:1.4em;
+  transition: all 0.2s;  
+  width: 90%;
+	margin-left: 3%;
+}
+
+.frame a:hover .caption p {
+  display: block;
+}
+
+/*Bootstrap Bug workaround*/
+div {
+-webkit-transition: all 0s ease-out;
+-moz-transition: all 0s ease-out;
+-o-transition: all 0s ease-out;
+transition: all 0s ease-out;
+}
